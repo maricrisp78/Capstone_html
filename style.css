@@ -1,0 +1,66 @@
+html {
+  color: white;
+  margin: 0px;
+  
+}
+
+body {
+  background: url('images/greenbike_copy2.png') no-repeat;
+  background-size: 1600px auto;
+  margin: 0;
+}
+
+
+.logo {
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+.twitter-timeline {
+  float: left;
+}
+
+/* p {
+  color: white;
+  margin-left: 640px;
+}
+ */
+.placeholder {
+  color: ivory;
+}
+
+.search-title {
+  font-size: 60px;
+}
+
+.wordword {
+  margin-left: 600px;
+  
+}
+
+.yourword {
+  font-size: 15px;
+  margin-top: 35px;
+}
+
+.submit {
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.wannaknow 
+{
+  font-family: helvetica, sans-serif;
+  font-size: 30px;
+  margin-left: 500px;
+  margin-top: -20px;
+  color: white;
+}
+
+@media screen and (min-width:1px) and (max-width:1900px) {
+    ...
+}
+@media screen and (min-width:1900px) {
+    ...
+}

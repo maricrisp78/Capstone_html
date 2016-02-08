@@ -11,8 +11,13 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.css">
-	  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">
+</script>
 	
+<script src="http://code.jquery.com/jquery-1.11.0.min.js">
+</script>
+
+
 	
  <header>
 
@@ -59,29 +64,58 @@
       </div>
     </nav> 
 
+
+<script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(images/canl.png)'
+  , 'url(images/boardwalk.png)'
+  , 'url(images/sunset.png)'
+  , 'url(images/Burano-Italy.png)'
+  , 'url(images/oldschoolvan.png)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);
+});
+</script>
+
+
+
+
     <div class="container">
+
+     <aside class="background">
+     
+     </aside> 
 			
-			<img class="wordword" src="images/word3.png" style="width: 200px;height: auto" >
+			<img class="wordword" src="images/wordS.png" style="width: 300px;height: auto" >
 			
-			<p class="wannaknow">
-			If you wanna know, type it below.	<br>
+		<!-- 	<p class="wannaknow">
+			If you wanna know, type it below.	<br> -->
 				
 				<input class="yourword" type="text" value="What's your word?"</input> 
 
-				<button class="sumbit" type="button" style="width: 100px;height: 30px;">
+				<button class="sumbit" type="button" style="height: 40px;width: 70px; border-radius: 10px; padding: 10px;">
 					Submit
 				</button>
 				
 			</p>
 			
- 
-			
-			
-			
 
 			
-    </div> <!-- /container -->
-	
+    </div>
+	 <!-- /container -->
 	
 	<div>
 	
@@ -108,11 +142,11 @@
     <script src="js/main.js"></script>  
 		
 		
-<!-- 	<footer>
+	<footer>
   <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=WhatTheFFacts%20" data-widget-id="692891429878693888">Tweets about WhatTheFFacts </a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </footer>
-    	 -->
+    	
 		
   
   </body>
